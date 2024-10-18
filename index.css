@@ -1,0 +1,120 @@
+*{
+	font-family:Arial;
+	line-height:1.5;
+	margin:  0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	box-sizing: border-box;
+}
+
+.main{
+	display:flex;
+	margin-left:  auto;
+	margin-right:  auto;
+	width : 900px;
+	height: 550px;
+	flex-direction:column;
+	background-color:blue;
+}
+
+.nav{
+	background:black;
+	display:flex;
+	flex-direction:row;
+	height: 54px;
+	align-content: center;
+	box-sizing: border-box;
+	justify-content:space-around;
+}
+
+.navBtn{
+	width:296px;
+	background-color:red;
+	color:white;
+	font-size:1.5em;
+	height: 50px;
+	text-align:center;
+	cursor:pointer;
+	box-sizing: border-box;
+	line-height:50px;
+}
+
+.mainPanel{
+	display:flex;
+	flex-direction:row;
+	justify-content:stretch;
+	align-items:stretch;
+	flex:900px;
+}
+
+/*Both position (scene) - default*/
+.leftPanelBothScene{
+	text-align:center;
+	flex:1;
+		
+}
+
+.leftPanelBothScene>img{
+	display:inline-block;
+	width:410px;
+	height:355px;
+	margin:20px;
+}
+
+.rightPanelBothScene{
+	text-align:center;
+	background-color:green;
+	flex:1;
+}
+
+.rightPanelBothScene>img{
+	display:inline-block;
+	width:410px;
+	height:355px;
+	margin:20px;
+}
+
+
+/*Left position (scene)*/
+.leftPanelLeftScene{
+	text-align:left;
+	flex:1.9;
+}
+
+.leftPanelLeftScene>img{
+	display:inline-block;
+	width:600px;
+	height:355px;
+	margin:20px;
+}
+
+.rightPanelLeftScene{
+	background-color:green;
+	flex:0.1;
+}
+
+.rightPanelLeftScene>img{
+	display:none;
+}
+
+/*Right position(scene)*/
+
+.leftPanelRightScene{
+	flex:0.1;
+}
+
+.leftPanelRightScene>img{
+	display:none;
+}
+
+.rightPanelRightScene{
+	background-color:green;
+	text-align:left;
+	flex:1.9;
+}
+
+.rightPanelRightScene>img{
+	display:inline-block;
+	width:600px;
+	height:355px;
+	margin:20px;
+}
